@@ -1,246 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impactflow - Social Media Marketing Agency</title>
+  <title>Zen AI Studio - Create. Innovate. Build.</title>
+  <meta name="description" content="Zen AI Studio is a creative digital technology studio in Afghanistan building websites, UI/UX and AI experiences for clients worldwide.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Inter:wght@400;500;600&family=Vazirmatn:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- نوار منوی بالا -->
   <header class="navbar-wrapper">
     <nav class="navbar">
-      <a href="#" class="logo">
-        <span class="logo-dot"></span> ImpactFlow
-      </a>
+      <a href="#home" class="logo"><span class="logo-dot"></span> Zen AI Studio</a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#case-studies">Case Studies</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#team">Team</a></li>
+        <li><a href="#home" data-i18n="n1">Home</a></li>
+        <li><a href="#about" data-i18n="n2">About</a></li>
+        <li><a href="#services" data-i18n="n3">Services</a></li>
+        <li><a href="#case-studies" data-i18n="n4">Work</a></li>
+        <li><a href="#team" data-i18n="n6">Team</a></li>
+        <li><a href="#contact" data-i18n="n7">Contact</a></li>
       </ul>
       <div class="nav-actions">
-        <a href="#pricing" class="btn btn-primary">Book a Call</a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">☰</button>
+        <button class="lang-btn" id="langToggle" type="button" aria-label="Switch language">فارسی</button>
+        <a href="#contact" class="btn btn-primary btn-sm" data-i18n="nc">Book a Call</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu" aria-expanded="false">☰</button>
       </div>
     </nav>
   </header>
 
-  <!-- بخش اصلی (Hero Section) -->
   <section id="home" class="hero">
-    <div class="badge">
-      <span class="badge-dot"></span>
-      <span>Trusted by global brands</span>
-    </div>
-    <h1>Build, Grow, and Scale Your Brand on Social Media</h1>
-    <p class="subtitle">
-      We combine content, management, and paid media to help brands grow, engage, and convert — on the platforms that matter most.
-    </p>
+    <div class="badge"><span class="badge-dot"></span><span data-i18n="hb">Professional web development studio</span></div>
+    <h1 data-i18n="h1">Front-End and Back-End Web Development</h1>
+    <p class="subtitle" data-i18n="hs">We design and build fast, responsive websites and the reliable server-side systems behind them. From clean interfaces to secure APIs and databases, we deliver complete web products.</p>
     <div class="hero-buttons">
-      <a href="#case-studies" class="btn btn-white">Case Studies</a>
-      <a href="#services" class="btn btn-black">Explore Service</a>
+      <a href="#case-studies" class="btn btn-white" data-i18n="hb1">View Projects</a>
+      <a href="#services" class="btn btn-black" data-i18n="hb2">Our Services</a>
     </div>
-
-    <!-- گالری ویدیوهای متحرک -->
     <div class="hero-gallery">
-      <div class="video-card">
-        <video src="https://framerusercontent.com/assets/G3SbC2Xgq2dRegUwe101bOC9P2c.mp4" loop muted autoplay playsinline></video>
-      </div>
-      <div class="video-card phone-highlight">
-        <video src="https://framerusercontent.com/assets/D6VlLsmS2WRcFx5oWQnZNyXPk.mp4" loop muted autoplay playsinline></video>
-      </div>
-      <div class="video-card">
-        <video src="https://framerusercontent.com/assets/1dJOreR1wLG9ZWi5Vf3iY6IEvPg.mp4" loop muted autoplay playsinline></video>
-      </div>
+      <div class="video-card side"><img src="images/backend.svg" alt="Back-end architecture diagram" width="1200" height="675" decoding="async"></div>
+      <div class="video-card phone-highlight"><img src="images/code-editor.svg" alt="Code editor showing a server API" width="1200" height="675" decoding="async"></div>
+      <div class="video-card side"><img src="images/web-design.svg" alt="Website interface design" width="1200" height="675" decoding="async"></div>
     </div>
   </section>
 
-  <!-- بخش همکاران (Growth Partners) -->
   <section class="partners">
-    <p class="section-label">Growth Partners</p>
+    <p class="section-label">Zen AI Studio</p>
     <div class="partners-list">
-      <span>NOVA MEDIA</span>
-      <span>PULSE STUDIO</span>
-      <span>APEX GROWTH</span>
-      <span>VORTEX LABS</span>
-      <span>ZEN DIGITAL</span>
+      <span>UI/UX</span>
+      <span>Front-End</span>
+      <span>Back-End</span>
+      <span>Full-Stack</span>
+      <span>Website Optimization</span>
     </div>
   </section>
 
-  <!-- بخش خدمات (Services) -->
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <div class="about-grid reveal">
+      <div>
+        <div class="badge badge-outline"><span class="badge-dot"></span><span data-i18n="n2">About</span></div>
+        <h2 data-i18n="ah">A small studio with a large view of what the web can do</h2>
+        <p class="lead" data-i18n="a1">Zen AI Studio is a creative digital technology studio based in Afghanistan, working with clients around the world. We combine design, programming and artificial intelligence in one team, so an idea never gets lost between the designer and the developer.</p>
+        <p data-i18n="a2">We design interfaces, build and maintain websites and web applications, and add AI where it saves people real time. Distance is not a constraint for us: our clients brief us online, review work online, and get the same attention as if we shared an office.</p>
+        <p class="slogan">Create. Innovate. Build.</p>
+      </div>
+      <div class="vm">
+        <div class="card"><h3 data-i18n="vt">Vision</h3><p data-i18n="vp">To be the studio people trust when they want technology that feels thoughtful, fast and human, built from Afghanistan for the world.</p></div>
+        <div class="card"><h3 data-i18n="mt">Mission</h3><p data-i18n="mp">To turn ideas into polished, working digital products, with clear communication and honest timelines from the first message to launch.</p></div>
+      </div>
+    </div>
+    <div class="grid-3 pillars reveal">
+      <div class="card"><h3 data-i18n="p1t">Create</h3><p data-i18n="p1">Every project starts with listening. We research your audience and shape a visual identity that is specific to you, not a template.</p></div>
+      <div class="card"><h3 data-i18n="p2t">Innovate</h3><p data-i18n="p2">We test new tools, including AI, and use them only when they make the result better, faster or easier to maintain.</p></div>
+      <div class="card"><h3 data-i18n="p3t">Build</h3><p data-i18n="p3">Clean code, responsive layouts and fast load times. We ship work that holds up on a phone, a tablet and a laptop.</p></div>
+    </div>
+    <div class="why reveal">
+      <h3 data-i18n="wh">Why clients choose us</h3>
+      <ul>
+        <li><strong data-i18n="w1t">Design and code under one roof.</strong> <span data-i18n="w1">What is designed is what gets built.</span></li>
+        <li><strong data-i18n="w2t">Bilingual by default.</strong> <span data-i18n="w2">English and Persian, with correct RTL and LTR layouts.</span></li>
+        <li><strong data-i18n="w3t">Direct communication.</strong> <span data-i18n="w3">You talk to the people doing the work, on WhatsApp or email.</span></li>
+        <li><strong data-i18n="w4t">Built for performance.</strong> <span data-i18n="w4">Lightweight pages that load quickly on any connection.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SHOWCASE: lightweight looping visuals (no heavy files) -->
+  <section id="showcase" class="section container">
+    <div class="section-header reveal">
+      <div class="badge badge-outline"><span class="badge-dot"></span><span data-i18n="sb">Craft in motion</span></div>
+      <h2 data-i18n="sh">Design, code and AI, working together</h2>
+    </div>
+    <div class="grid-3 reveal">
+      <figure class="panel">
+        <div class="panel-view code" dir="ltr"><div class="dots"><i></i><i></i><i></i></div><pre id="codeOut" aria-hidden="true"></pre></div>
+        <figcaption data-i18n="c1">Clean, fast front-end code</figcaption>
+      </figure>
+      <figure class="panel">
+        <div class="panel-view ui" aria-hidden="true"><div class="u-bar"></div><div class="u-hero"></div><div class="u-row"><b></b><b></b><b></b></div><div class="u-btn"></div><svg class="u-cursor" viewBox="0 0 24 24"><path d="M5 3l14 8-6 2-3 6z"/></svg></div>
+        <figcaption data-i18n="c2">UI/UX designed before it is built</figcaption>
+      </figure>
+      <figure class="panel">
+        <div class="panel-view ai"><canvas id="aiCanvas" aria-hidden="true"></canvas></div>
+        <figcaption data-i18n="c3">AI woven into real workflows</figcaption>
+      </figure>
+    </div>
+  </section>
+
   <section id="services" class="section container">
-    <div class="section-header">
-      <div class="badge badge-outline">
-        <span class="badge-dot"></span>
-        <span>Services</span>
-      </div>
-      <h2>Everything you need to grow on social done for you</h2>
-      <p>We handle the strategy, execution, and optimization — so you can focus on your business.</p>
+    <div class="section-header reveal">
+      <div class="badge badge-outline"><span class="badge-dot"></span><span data-i18n="n3">Services</span></div>
+      <h2 data-i18n="sv">Web development services, end to end</h2>
+      <p data-i18n="svp">Strategy, design, code and optimization from one focused team.</p>
     </div>
-
-    <div class="grid-3">
-      <div class="service-card">
-        <img src="https://framerusercontent.com/images/P8AYRenSjOp0vGlDeH60x2aus.png" alt="Content Creation">
-        <h3>Content Creation</h3>
-        <p>Create scroll-stopping content that builds attention and trust.</p>
-      </div>
-      <div class="service-card">
-        <img src="https://framerusercontent.com/images/4K3Txuwd6BlolaMYtelHBh2ds.png" alt="Social Media Management">
-        <h3>Social Media Management</h3>
-        <p>Consistent posting, engagement, and growth — without the stress.</p>
-      </div>
-      <div class="service-card">
-        <img src="https://framerusercontent.com/images/0s1n1isNgbHLn2rYvtfQZEPT2W8.png" alt="Paid Media">
-        <h3>Paid Media (Ads)</h3>
-        <p>Turn views into revenue with high-performing ad campaigns.</p>
-      </div>
+    <div class="grid-3 reveal">
+      <div class="service-card"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg><h3 data-i18n="s1t">Front-End Development</h3><p data-i18n="s1">Fast, accessible interfaces built with modern HTML, CSS and JavaScript.</p></div>
+      <div class="service-card"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg><h3 data-i18n="s2t">Back-End Development</h3><p data-i18n="s2">Secure APIs, databases and server logic that scale with your product.</p></div>
+      <div class="service-card"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5"/></svg><h3 data-i18n="s3t">Full-Stack Development</h3><p data-i18n="s3">One team from interface to infrastructure, delivering complete web applications.</p></div>
+      <div class="service-card"><svg viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 18h2"/></svg><h3 data-i18n="s4t">Responsive Web Design</h3><p data-i18n="s4">Layouts that work equally well on phones, tablets and desktops.</p></div>
+      <div class="service-card"><svg viewBox="0 0 24 24"><path d="M4 20l4-1 11-11-3-3L5 16zM14 6l3 3"/></svg><h3 data-i18n="s5t">UI/UX Design</h3><p data-i18n="s5">Clear, usable interfaces designed around how people actually work.</p></div>
+      <div class="service-card"><svg viewBox="0 0 24 24"><path d="M4 17a8 8 0 1116 0M12 17l4-5"/></svg><h3 data-i18n="s6t">Website Optimization</h3><p data-i18n="s6">Speed, SEO and performance tuning for faster pages and better rankings.</p></div>
     </div>
   </section>
 
-  <!-- بخش نمونه‌کارها (Case Studies) -->
   <section id="case-studies" class="section container">
-    <div class="section-header">
-      <div class="badge badge-outline">
-        <span class="badge-dot"></span>
-        <span>Case Studies</span>
-      </div>
-      <h2>Growth you can actually measure</h2>
-      <p>We focus on what matters — engagement, leads, and revenue.</p>
+    <div class="section-header reveal">
+      <div class="badge badge-outline"><span class="badge-dot"></span><span data-i18n="n4">Projects</span></div>
+      <h2 data-i18n="cs">Projects built to perform</h2>
+      <p data-i18n="csp">Examples of the interfaces, systems and applications we deliver.</p>
     </div>
-
     <div class="case-list">
-      <article class="case-card" style="background-image: url('https://framerusercontent.com/images/7QgmADMoMxO1RPyqh7nK3mF0XQ.png');">
-        <div class="case-overlay">
-          <span class="tag">Beauty</span>
-          <h3>Radiance</h3>
-          <p>Helped a growing beauty brand increase engagement, strengthen its identity, and turn social media attention into sales.</p>
-        </div>
+      <article class="case-card" role="img" aria-label="Responsive Business Website" style="background-image: url('images/web-design.svg');">
+        <div class="case-overlay"><span class="tag">Front-End</span><h3>Responsive Business Website</h3><p data-i18n="k1">Fast, accessible pages with clean components, smooth interactions and a consistent design system.</p></div>
       </article>
-
-      <article class="case-card" style="background-image: url('https://framerusercontent.com/images/cv2pbqOy4ho7xZOer2ifUGxSZ3E.png');">
-        <div class="case-overlay">
-          <span class="tag">Fitness</span>
-          <h3>UrbanFit</h3>
-          <p>Built a content-driven growth strategy that boosted community engagement and attracted new fitness enthusiasts.</p>
-        </div>
+      <article class="case-card" role="img" aria-label="API and Data Platform" style="background-image: url('images/backend.svg');">
+        <div class="case-overlay"><span class="tag">Back-End</span><h3>API and Data Platform</h3><p data-i18n="k2">Secure REST APIs, authentication and database design built to handle growth.</p></div>
       </article>
-
-      <article class="case-card" style="background-image: url('https://framerusercontent.com/images/qX0ZoKaeso1YAFffEWMp1kyVIM.png');">
-        <div class="case-overlay">
-          <span class="tag">Lifestyle</span>
-          <h3>Brew House</h3>
-          <p>Expanded local reach through targeted content and campaigns that increased awareness and customer visits.</p>
-        </div>
+      <article class="case-card" role="img" aria-label="Web Application" style="background-image: url('images/code-editor.svg');">
+        <div class="case-overlay"><span class="tag">Full-Stack</span><h3>Web Application</h3><p data-i18n="k3">Complete applications from code editor to deployment, with testing and performance in mind.</p></div>
       </article>
     </div>
   </section>
 
-  <!-- بخش تعرفه‌ها (Pricing) -->
-  <section id="pricing" class="section container">
-    <div class="section-header">
-      <div class="badge badge-outline">
-        <span class="badge-dot"></span>
-        <span>Pricing</span>
-      </div>
-      <h2>Simple pricing. Scalable growth.</h2>
-      <p>Choose a plan that fits your stage — and scale as you grow.</p>
-    </div>
-
-    <div class="grid-3">
-      <!-- پلن Starter -->
-      <div class="pricing-card">
-        <h3>Starter</h3>
-        <p class="plan-desc">Small businesses starting their social presence</p>
-        <div class="price">$500<span>/month</span></div>
-        <ul class="features">
-          <li>✓ Social brand audit</li>
-          <li>✓ 3–4 posts per week</li>
-          <li>✓ Basic content strategy</li>
-          <li>✓ Platform management (1–2 platforms)</li>
-          <li>✓ Email Support</li>
-        </ul>
-        <button class="btn btn-black full-width select-plan" data-plan="Starter ($500/mo)">Start Now</button>
-      </div>
-
-      <!-- پلن Growth -->
-      <div class="pricing-card featured">
-        <div class="card-top">
-          <h3>Growth</h3>
-          <span class="best-badge">Best</span>
-        </div>
-        <p class="plan-desc">Growing brands looking to increase engagement, leads, and conversions.</p>
-        <div class="price">$999<span>/month</span></div>
-        <ul class="features">
-          <li>✓ Everything in Starter</li>
-          <li>✓ 5 Posts Per Week</li>
-          <li>✓ Multi-Platform Management</li>
-          <li>✓ Advanced Content Strategy</li>
-          <li>✓ Community Management</li>
-          <li>✓ Paid Ads Management</li>
-        </ul>
-        <button class="btn btn-white full-width select-plan" data-plan="Growth ($999/mo)">Start Now</button>
-      </div>
-
-      <!-- پلن Premium -->
-      <div class="pricing-card">
-        <h3>Premium</h3>
-        <p class="plan-desc">Established brands ready to scale aggressively.</p>
-        <div class="price">$1,500<span>/month</span></div>
-        <ul class="features">
-          <li>✓ Everything in Growth</li>
-          <li>✓ Daily Content Management</li>
-          <li>✓ Full Paid Media Strategy</li>
-          <li>✓ Conversion Funnel Optimization</li>
-          <li>✓ Custom Growth Roadmap</li>
-        </ul>
-        <button class="btn btn-black full-width select-plan" data-plan="Premium ($1,500/mo)">Start Now</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- بخش تیم (Team) -->
   <section id="team" class="section container">
-    <div class="section-header">
-      <div class="badge badge-outline">
-        <span class="badge-dot"></span>
-        <span>Team</span>
-      </div>
-      <h2>Meet the Team</h2>
-      <p>The people behind your growth</p>
+    <div class="section-header reveal">
+      <div class="badge badge-outline"><span class="badge-dot"></span><span data-i18n="n6">Team</span></div>
+      <h2 data-i18n="tm">Meet the Team</h2>
+      <p data-i18n="tmp">The developers and designers behind your project</p>
     </div>
-
-    <div class="grid-3">
-      <div class="team-card">
-        <img src="https://framerusercontent.com/images/R0icmZhzMdosRa63FZmQcvcNWw.png" alt="Samantha Thomson">
-        <div class="team-info">
-          <h4>Samantha Thomson</h4>
-          <p>CEO - Founder</p>
-        </div>
-      </div>
-      <div class="team-card">
-        <img src="https://framerusercontent.com/images/Xo30g9VhV6f4mjA2Pv7hjP8VE.png" alt="Olivia Carter">
-        <div class="team-info">
-          <h4>Olivia Carter</h4>
-          <p>Creative Director</p>
-        </div>
-      </div>
-      <div class="team-card">
-        <img src="https://framerusercontent.com/images/pvLdhtlI3s69VpRW6F5Mmt3VIE.png" alt="Sara Bennett">
-        <div class="team-info">
-          <h4>Sara Bennett</h4>
-          <p>Paid Media Specialist</p>
-        </div>
-      </div>
+    <div class="grid-3 grid-4">
+      <div class="team-card"><img loading="lazy" src="https://framerusercontent.com/images/R0icmZhzMdosRa63FZmQcvcNWw.png" alt="Samantha Thomson"><div class="team-info"><h4>Samantha Thomson</h4><p data-i18n="r1">Founder and Lead Developer</p></div></div>
+      <div class="team-card"><img loading="lazy" src="https://framerusercontent.com/images/Xo30g9VhV6f4mjA2Pv7hjP8VE.png" alt="Olivia Carter"><div class="team-info"><h4>Olivia Carter</h4><p data-i18n="r2">Front-End Developer</p></div></div>
+      <div class="team-card"><img loading="lazy" src="https://framerusercontent.com/images/pvLdhtlI3s69VpRW6F5Mmt3VIE.png" alt="Sara Bennett"><div class="team-info"><h4>Sara Bennett</h4><p data-i18n="r3">Back-End Developer</p></div></div>
+      <div class="team-card"><img loading="lazy" src="images/avatar.svg" alt="Team Member"><div class="team-info"><h4>Team Member</h4><p data-i18n="r4">UI/UX Designer</p></div></div>
     </div>
   </section>
+
+  <section id="contact" class="section container">
+    <div class="section-header reveal">
+      <div class="badge badge-outline"><span class="badge-dot"></span><span data-i18n="n7">Contact</span></div>
+      <h2 data-i18n="ct">Tell us what you want to build</h2>
+      <p data-i18n="ctp">Send a message on WhatsApp or email, or follow our work on Instagram.</p>
+    </div>
+    <form class="contact-form reveal" id="contactForm" novalidate>
+      <input id="cName" type="text" data-i18n-ph="fn" placeholder="Your name" autocomplete="name">
+      <textarea id="cMsg" rows="4" data-i18n-ph="fm" placeholder="Tell us about your project"></textarea>
+      <div class="contact-actions">
+        <button type="button" class="btn btn-primary" id="sendWa">WhatsApp</button>
+        <button type="button" class="btn btn-outline" id="sendMail">Email</button>
+        <a class="btn btn-outline" id="igLink" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </form>
+  </section>
+
+  <div class="social-links container reveal" id="social">
+    <a class="soc" id="socMail" target="_blank" rel="noopener" aria-label="Email"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>Email</span></a>
+    <a class="soc" id="socIg" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg><span>Instagram</span></a>
+    <a class="soc" id="socWa" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M4 20l1.3-4A8 8 0 1112 20a8 8 0 01-3.8-1z"/><path d="M9 9c0 3 3 6 6 6l1-2-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2z"/></svg><span>WhatsApp</span></a>
+    <a class="soc" id="socGh" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg><span>GitHub</span></a>
+  </div>
 
   <footer class="footer">
-    <p>© 2026 ImpactFlow / Zen Developer Team. All rights reserved.</p>
+    <p>© 2026 Zen AI Studio / Zen Developer Team. <span data-i18n="rights">All rights reserved.</span></p>
   </footer>
 
   <script src="script.js"></script>
